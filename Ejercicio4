@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int n, i, suma = 0;
+    printf("Ingrese N: ");
+    scanf("%d", &n);
+    for(i = 1; i <= n; i++) {
+        if(i % 2 == 1) suma += i;
+        else suma -= i;
+    }
+    printf("S = %d\n", suma);
+    return 0;
+}
