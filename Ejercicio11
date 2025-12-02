@@ -1,19 +1,17 @@
-#include <iostream>
-using namespace std;
-
+#include <stdio.h>
 int mcd(int a, int b) {
+    int temp;
     while(b != 0) {
-        int temp = b;
+        temp = b;
         b = a % b;
         a = temp;
     }
     return a;
 }
-
 int main() {
     int a, b;
-    cout << "Ingrese dos numeros: ";
-    cin >> a >> b;
-    cout << "MCD = " << mcd(a, b) << endl;
+    printf("Numero 1: "); scanf("%d", &a);
+    printf("Numero 2: "); scanf("%d", &b);
+    printf("MCD = %d\n", mcd(a, b));
     return 0;
 }
